@@ -1,14 +1,17 @@
-:root {
+* {
     padding: 0;
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 .encabezado {
-    display: fixed;
-    top: 0;
-    max-width: 100%;
-    height: 15vh;
+    width: 100%;
+    height: 60vh;
+    background-image: url(./Assets/fondo-encabezado.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
 }
 
 .navegacion {
@@ -19,17 +22,18 @@
 
 .logo {
     width: 6em;
+    flex-grow: 2;
     padding-left: 1em;
     padding-top: 1em;
     padding-bottom: 1em;
-    background-color: dark;
     color: white;
     font-size: 1.5em;
     text-align: center;
+
 }
 
 .subtitulos {
-    display: flex;
+    flex-grow: 1;
     align-items: center;
     margin-bottom: 0;
 }
@@ -37,4 +41,123 @@
     color:white;
     list-style: none;
     text-decoration: none;
+}
+.subtitulos::after{
+    content: "";
+    position: absolute;
+}
+
+.contenedor-frente {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    margin-top: 4em;
+}
+
+.refran {
+    font-family:"DM Serif Display", serif;
+    text-align: center;
+    color: white;
+    font-weight:lighter;
+    margin-bottom: 0;
+    font-size: 1.3em;
+}
+.titulo {
+    font-family: "DM Serif Display" , serif;
+    text-align: center;
+    color: white;
+    font-weight:500;
+    font-size: 3em; ;
+    margin-bottom: 0;
+}
+.boton {
+    width: 15em;
+    height: 4em;
+    border: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:#a87b05;
+    color: white;
+    padding: 0 auto;
+
+}
+
+.ultimo-item {
+    width: 7em;
+    height: 3em;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+}
+
+.slide-1{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.conjunto-total {
+    width: 80em;
+    height: 15em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    background-color: #212121;
+    
+}
+.contenedor-divs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding-right:4em;
+    padding-left: 4em;
+    padding-top: 2em;
+}
+
+.contenedor-divs > div {
+    width: 12em;
+    height: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color:#303030;
+    padding-left: 1.3em;
+    
+}
+
+.contenedor-divs > div > span {
+    color: gray;
+    margin-bottom: 0.2em;
+}
+
+.contenedor-divs > div > h6 {
+    color: white;
+    font-weight: 400;
+}
+
+.div-boton {
+    height: 5em;
+    padding: 0 auto;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+.conjunto-total p {
+    color: gray;
+    font-family: "Playwrite NZ";
+}
+
+.conjunto-total {
+    position: absolute;
+    top: 53%;
 }
