@@ -95,23 +95,34 @@
 
 .slide-1{
     width: 100%;
-    height: 40vh;
+    height: 40%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
+    background-color: #fff6ed;
+    position: relative;
 }
+
+/* CONTENEDOR NEGRO */
 .conjunto-total {
-    width: 80em;
-    height: 15em;
+    /*width: 80em;*/
+    width: 80%;
+    height: 15em;    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2em;
     background-color: #212121;
+    position: absolute;
+    top: -2em;
+    left: 11%;
+    /* z-index: -1; */
     
 }
 .contenedor-divs {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,11 +156,10 @@
 
 .div-boton {
     height: 5em;
-    padding: 0 auto;
+    padding: 1.5em;
     list-style: none;
     text-decoration: none;
     text-align: center;
-    padding-top: 1.5em;
 }
 
 .conjunto-total p {
@@ -157,7 +167,106 @@
     font-family: "Playwrite NZ";
 }
 
-.conjunto-total {
-    position: absolute;
-    top: 53%;
+
+/*-------------------------------*/
+
+.contenedor-habitaciones {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-top: 20em;
+    margin-bottom: 3em;
+
+}
+
+.contenedor-habitaciones > div {
+    width: 25%;
+    height: 100%;
+    padding: 1.5em;
+    background-color: white;
+    gap: 1em;
+}
+
+.imagen-habitacion {
+    width: 100%;
+    height: 15em;
+    object-fit: cover;
+}
+
+.contenedor-habitaciones > div > h3 {
+    width: 100%;
+    padding: 0.5em 0.5em 0.5em 0;
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.contenedor-habitaciones > div > p {
+    width: 100%;
+    padding-right: 0.3em;
+    margin-bottom: 2em;
+}
+
+.contenedor-habitaciones > div > a {
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    margin-bottom: 2em;
+}
+
+.contenedor-habitaciones + a {
+    text-decoration: none;
+    text-align: center;
+    padding: 1.2em 0;
+    margin-bottom: 1em;
+}
+
+
+/* Pie de Pagina */
+
+.pie-pagina {
+    width: 100%;
+    height: 7em;
+    display: flex;
+    background-color: #212121;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.pie-pagina span:first-child{
+    width: 10%;
+    height: auto;
+    padding: 1em;
+    margin-left: 2em;
+    color: white;
+    font-size: 1.3em;
+    text-align: start;
+}
+
+.pie-pagina span:last-child{
+    color: gray;
+    margin-right: 2em;
+
+}
+
+.pie-pagina div {
+    width: 10%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    color: white;
+    
+}
+
+.pie-pagina div a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: white;
 }
