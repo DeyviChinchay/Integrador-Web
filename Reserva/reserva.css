@@ -1,0 +1,91 @@
+/* reserva.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.navbar {
+    background-color: #000;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #f0a500;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.nav-link.active {
+    color: #f0a500;
+}
+
+.hero-section {
+    background: url('https://source.unsplash.com/random/1920x1080?hotel') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-section .btn-gold {
+    background-color: #f0a500;
+    color: #000;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    text-transform: uppercase;
+    border: none;
+}
+
+.hero-section .btn-gold:hover {
+    background-color: #000;
+    color: #f0a500;
+}
+
+.container {
+    max-width: 800px;
+    margin-top: 2rem;
+}
+
+.formulario h2 {
+    margin-bottom: 1rem;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: #f0a500;
+    border-color: #f0a500;
+}
+
+.btn-secondary {
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.modal-content {
+    border-radius: 0;
+}

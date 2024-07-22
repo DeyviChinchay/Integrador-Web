@@ -100,7 +100,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-color: #fff6ed;
+    background-color: #f7f6f2;
     position: relative;
 }
 
@@ -220,17 +220,19 @@
     text-decoration: none;
     text-align: center;
     padding: 1.2em 0;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
 }
 
 .slide-2 {
     width: 100%;
     height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .imagen-360 {
-    width: 100%;
+    width: 85%;
     height: 100%;
-
 }
 
 
